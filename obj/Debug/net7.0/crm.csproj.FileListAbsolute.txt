@@ -1,0 +1,15 @@
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\bin\Debug\net7.0\crm.exe
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\bin\Debug\net7.0\crm.deps.json
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\bin\Debug\net7.0\crm.runtimeconfig.json
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\bin\Debug\net7.0\crm.dll
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\bin\Debug\net7.0\crm.pdb
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.csproj.AssemblyReference.cache
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.AssemblyInfoInputs.cache
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.AssemblyInfo.cs
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.csproj.CoreCompileInputs.cache
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.dll
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\refint\crm.dll
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.pdb
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\crm.genruntimeconfig.cache
+C:\dev\C# Alif Academy - 2023\crm-practice\crm-practice\src\Crm\obj\Debug\net7.0\ref\crm.dll
