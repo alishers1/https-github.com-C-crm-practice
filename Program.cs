@@ -6,6 +6,7 @@ Console.WriteLine("Enter the command (Create Client or Create Order): ");
 string? cmd = Console.ReadLine();
 
 ClientService clientService = new();
+OrderService orderService = new();
 
 if (cmd.Equals("Create client", StringComparison.OrdinalIgnoreCase))
 {
@@ -27,7 +28,7 @@ if (cmd.Equals("Create client", StringComparison.OrdinalIgnoreCase))
     Console.Write("Enter client gender: ");
     string? gender = Console.ReadLine();
 
-    Client newClient = clientService.CreateClient(
+    ClientInfo clientInfo = new ClientInfo(
         firstName,
         lastName,
         middleName,
@@ -36,7 +37,43 @@ if (cmd.Equals("Create client", StringComparison.OrdinalIgnoreCase))
         gender
     );
 
-    Console.WriteLine(newClient.ToString());
+    Client newClient = clientService.CreateClient(clientInfo);
+
+    Console.WriteLine("\n" + newClient);
+}
+
+if (cmd.Equals("Create order", StringComparison.OrdinalIgnoreCase))
+{
+    Console.Write("Enter order ID: ");
+    int id = int.Parse(Console.ReadLine());
+
+    Console.Write("Enter order description: ");
+    string? description = Console.ReadLine();
+
+    Console.Write("Enter order price: ");
+    double price = double.Parse(Console.ReadLine());
+
+    Console.Write("Enter order date: ");
+    DateTime date = DateTime.Parse(Console.ReadLine());
+
+    Console.Write("Enter order delivery status: ");
+    string? delivery = Console.ReadLine();
+
+    Console.Write("Enter order address: ");
+    string? address = Console.ReadLine();
+
+    OrderInfo orderInfo = new OrderInfo(
+        id,
+        description,
+        price,
+        date,
+        delivery,
+        address
+    );
+
+    Order newOrder = orderService.CreateOrder(orderInfo);
+
+    Console.WriteLine("\n" + newOrder);
 }
 
 
