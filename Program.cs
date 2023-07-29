@@ -8,6 +8,8 @@ string? cmd = Console.ReadLine();
 ClientService clientService = new();
 OrderService orderService = new();
 
+Client client = new("Alisher", "Siddiqov", 23);
+
 if (cmd.Equals("Create client", StringComparison.OrdinalIgnoreCase))
 {
     Console.Write("Enter client name: ");

@@ -1,13 +1,39 @@
-namespace Crm.Entities; 
+namespace Crm.Entities;
+
 
 public sealed class Client 
 {
-    public string? FirstName { get; set; }
-    public string? LastName { get; set; }
-    public string? MiddleName { get; set; }
-    public short? Age { get; set; }
-    public string? PassportNumber { get; set; }
-    public string? Gender { get; set; }
+    private string _firstName;
+    private string _lastName;
+    private short? _age;
+    private string _gender;
+
+
+    public string? FirstName { 
+        get => _firstName ?? string.Empty; 
+        init => _firstName = value is { Length: > 0} ? value : throw new ArgumentOutOfRangeException(nameof(value)); 
+    }
+    public string? LastName {
+        get => _firstName ?? string.Empty; 
+        init => _firstName = value is { Length: > 0} ? value : throw new ArgumentOutOfRangeException(nameof(value));
+    }
+    public string? MiddleName { get; init; }
+    public short? Age {
+        get => _age; 
+        init => _age = value > 18 ? value : throw new ArgumentException("Age is lower than 18!");
+    }
+    public string? PassportNumber { get; init; }
+    public string? Gender {
+        get => _gender ?? string.Empty; 
+        init => _gender = value == "Male" || value == "Female" ? value : throw new ArgumentException("Gender must be either 'Male' or 'Female'.");
+    }
+
+    public Client(string firstName, string lastName, short age)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        Age = age;
+    }
 
     public override string ToString()
     {
@@ -27,6 +53,7 @@ public readonly struct ClientInfo
     public readonly short Age  {get; init;}
     public readonly string PassportNumber  {get; init;}
     public readonly string Gender  {get; init;}
+
 
     public ClientInfo(
         string firstName,

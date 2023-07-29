@@ -5,7 +5,7 @@ public sealed class OrderService
 {
     public Order CreateOrder(OrderInfo orderInfo)
     {
-        Order newOrder = new Order
+        Order newOrder = new Order(12, 57)
         {
             ID = orderInfo.ID,
             Description = orderInfo.Description,

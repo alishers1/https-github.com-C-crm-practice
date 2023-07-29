@@ -8,7 +8,7 @@ public sealed class ClientService
     public Client CreateClient(ClientInfo clientInfo)
 
     {
-        Client newClient = new Client
+        Client newClient = new Client("Alisher", "Siddiqov", 23)
         {
             FirstName = clientInfo.FirstName,
             LastName = clientInfo.LastName,
