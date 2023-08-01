@@ -5,8 +5,8 @@ namespace Crm.Services;
 
 public sealed class ClientService
 {
+    private List<Client> clients = new();
     public Client CreateClient(ClientInfo clientInfo)
-
     {
         Client newClient = new Client("Alisher", "Siddiqov", 23)
         {
@@ -23,6 +23,7 @@ public sealed class ClientService
             return null;
         }
 
+        clients.Add(newClient);
 
         return newClient;
     }
